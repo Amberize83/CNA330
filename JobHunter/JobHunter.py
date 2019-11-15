@@ -15,7 +15,8 @@ from datetime import datetime
 def connect_to_sql():
     conn = mysql.connector.connect(user='root', password='',
                                   host='127.0.0.1',
-                                  database='cna330')
+                                  database='cna330'
+                                  port=3308)
     return conn
 
 # Create the table structure
